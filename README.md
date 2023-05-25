@@ -1,2 +1,1 @@
-# airflow_gcp
-Ingesting to GCP with Airflow (docker)
+# Ingesting data to GCP with Airflow (docker)
