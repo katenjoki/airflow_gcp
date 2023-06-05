@@ -23,7 +23,7 @@ In order to run successfully, make sure you've done the following steps, as high
 5. Setup terraform by creating the following files:
   * main.tf 
   * variables.tf 
-  * 
+  
 You can refer to the [main.tf](/main.tf) and [variables.tf](/variables.tf) files to see how I configured them. Make sure you configure the [variables.tf](/variables.tf) to match with the project details created when setting up your Terraform infrastructure.
 
 6. Create an environment variable called 'GOOGLE_APPLICATION_CREDENTIALS' pointing to your credentials file, for terraform to find it
@@ -34,4 +34,4 @@ You can refer to the [main.tf](/main.tf) and [variables.tf](/variables.tf) files
 * terraform apply
 terraform destroy - to destroy resources created by Terraform.
 
-8. If everything ran successfully, you should be able to see a bucket created in the Cloud Storeage section and a resource created in BigQuery.
+8. If everything ran successfully, you should be able to see a bucket created in the Cloud Storeage section and a resource created in BigQuery, as specified in the variables.tf file.
