@@ -10,6 +10,7 @@ If you're interested, check out this repo where I [ingested data into local Post
 - [Project Summary](#project-summary)
 - [Prerequisites](#prerequisites)
 - [Installation and Setup](#installation-and-setup)
+- [Running Airflow](#running-airflow)
 
 # Project Summary
 ![airflow_gcs.png](assets/airflow_gcs.png) 
@@ -64,3 +65,5 @@ Trigger the 'ingest_data_gcs_dag' by running the 'play' button on the action tab
 
 When the workflow runs successfully, this is what you should see:
 ![airflow](assets/airflow.PNG)
+
+Next, go to your Google Cloud console and select 'Cloud Storage' then 'Buckets'. 
