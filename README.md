@@ -26,8 +26,8 @@ You may need to set the memory for your Docker Engine to a minimum of 5GB otherw
 ```
 git clone https://github.com/katenjoki/airflow_gcp.git
 ```
-2. Rename your gcp-service-accounts-credentials file to google_hort_credentials.json & store it in your $HOME directory. If you choose to 
-rename it as something else e.g 'google_credentials.jso', make sure this reflects on the docker-compose.yaml file as well, otherwise it won't run.
+2. Rename your gcp-service-accounts-credentials file to google_hort_credentials.json & store it in your $HOME directory. 
+If you choose to rename it as something else e.g 'google_credentials.json', make sure this reflects on the docker-compose.yaml file as well, otherwise it won't run.
 ```
 cd ~ && mkdir -p ~/.google/credentials/
 mv <path/to/your/service-account-authkeys>.json ~/.google/credentials/google_hort_credentials.json
@@ -39,7 +39,7 @@ mv <path/to/your/service-account-authkeys>.json ~/.google/credentials/google_hor
     ```
 
 4. Edit the following in the environment section of the docker_compose.yaml file to reflect your project's details after [setting up your GCS infrastructure with Terraform](GCP_Terraform/terraform/READme.md):
-![environment](assets/environment.png)
+![environment](assets/environment.PNG)
 5. Navigate to the airflow folder.
 ```
 cd airflow
@@ -61,7 +61,6 @@ docker-compose up
 Access the Airflow web interface (http://localhost:8080) and sign in with "airflow" as the username and the password. Please note that using these credentials is not recommended for production environments and only for demonstrative purposes.
 
 Trigger the 'ingest_data_gcs_dag' by running the 'play' button on the action tab and monitor the DAG runs.
-![dags](assets/dag.PNG)
 
 When the workflow runs successfully, this is what you should see:
 ![airflow](assets/airflow.PNG)
