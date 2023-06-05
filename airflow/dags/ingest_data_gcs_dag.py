@@ -16,7 +16,7 @@ BUCKET = os.environ.get("GCP_GCS_BUCKET")
 
 path_to_local_home = os.environ.get("AIRFLOW_HOME","/opt/airflow")
 path_to_creds = os.environ.get("GOOGLE_APPLICATION_CREDENTIALS")
-BigQueryDataset = os.environ.get("BIGQUERY_DATASET","horticulture_latest_dataset")
+BigQueryDataset = os.environ.get("BIGQUERY_DATASET","maize_latest_dataset")
 
 #create dictionary with the years and urls
 years_dict = dict()
@@ -62,8 +62,8 @@ with DAG(
 ) as dag:
     
     for year,url in years_dict.items():
-        csv_file = f'Horticulture_{year}.csv'
-        parquet_file = f'Horticulture_{year}.parquet'
+        csv_file = f'maize_{year}.csv'
+        parquet_file = f'maize_{year}.parquet'
 
         download_data_task = BashOperator(
             task_id=f"download_data_task_{year}",
@@ -95,7 +95,7 @@ with DAG(
                 "tableReference":{
                     "projectId": PROJECT_ID,
                     "datasetId": BigQueryDataset,
-                    "tableId": f"horticulture_table_{year}"
+                    "tableId": f"maize_table_{year}"
                 },
                 "externalDataConfiguration":{
                     "sourceFormat": "PARQUET",

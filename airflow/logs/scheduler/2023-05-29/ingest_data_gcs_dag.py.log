@@ -1,6 +1,0 @@
-[2023-05-29T05:21:59.484+0000] {processor.py:157} INFO - Started process (PID=40) to work on /opt/airflow/dags/ingest_data_gcs_dag.py
-[2023-05-29T05:21:59.486+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/ingest_data_gcs_dag.py for tasks to queue
-[2023-05-29T05:21:59.490+0000] {logging_mixin.py:149} INFO - [2023-05-29T05:21:59.490+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/ingest_data_gcs_dag.py
-[2023-05-29T05:21:59.534+0000] {processor.py:836} INFO - DAG(s) dict_keys(['ingest_data_gcs_dag']) retrieved from /opt/airflow/dags/ingest_data_gcs_dag.py
-[2023-05-29T05:21:59.693+0000] {logging_mixin.py:149} INFO - [2023-05-29T05:21:59.693+0000] {dag.py:2726} INFO - Sync 1 DAGs
-[2023-05-29T05:21:59.786+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/ingest_data_gcs_dag.py took 0.308 seconds

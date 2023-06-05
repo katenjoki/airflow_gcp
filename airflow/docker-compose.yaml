@@ -26,11 +26,11 @@ x-airflow-common:
     # WARNING: Use _PIP_ADDITIONAL_REQUIREMENTS option ONLY for a quick checks
     # for other purpose (development, test and especially production usage) build/extend Airflow image.
     _PIP_ADDITIONAL_REQUIREMENTS: ${_PIP_ADDITIONAL_REQUIREMENTS:-}
-    GOOGLE_APPLICATION_CREDENTIALS: /.google/credentials/google_hort_credentials.json
-    AIRFLOW_CONN_GOOGLE_CLOUD_DEFAULT: 'google-cloud-platform://?extra__google_cloud_platform__key_path=/.google/credentials/google_hort_credentials.json'
-    GCP_PROJECT_ID: bold-apricot-387206
-    GCP_GCS_BUCKET: horticulture_data_lake_bold-apricot-387206
-    BIGQUERY_DATASET: horticulture_latest_dataset
+    GOOGLE_APPLICATION_CREDENTIALS: /.google/credentials/google_maize_credentials.json
+    AIRFLOW_CONN_GOOGLE_CLOUD_DEFAULT: 'google-cloud-platform://?extra__google_cloud_platform__key_path=/.google/credentials/google_maize_credentials.json'
+    GCP_PROJECT_ID: swift-branch-388919
+    GCP_GCS_BUCKET: maize_data_lake_swift-branch-388919
+    BIGQUERY_DATASET: maize_latest_dataset
   volumes:
     - ./dags:/opt/airflow/dags
     - ./logs:/opt/airflow/logs
