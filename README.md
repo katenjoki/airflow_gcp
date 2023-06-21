@@ -16,11 +16,13 @@ If you're interested, check out this repo where I [ingested data into local Post
 ![airflow_gcs.png](assets/airflow_gcs.png) 
 
 In this project, I used Airflow as an orchestrator for data processing tasks. I defined and executed the workflows using Directed Acyclic Graphs (DAGS) to represent the sequence of tasks needed to process and load data into Google Cloud Storage and subsequently, BigQuery.
-To do this project, you have to setup your google cloud account. You can find steps and reference videos on how to do this in the [Terraform READme](GCP_Terraform/terraform/READme.md).
+To do this project, you have to setup your google cloud account. You can find steps and reference videos on how to do this in the [Terraform READme](GCP_Terraform/terraform/README.md).
 
 # Prerequisites
-Docker: Make sure you have Docker installed on your machine. You can download and install Docker from the official website: https://www.docker.com
-You may need to set the memory for your Docker Engine to a minimum of 5GB otherwise if enough memory is not allocated, it might lead to airflow-webserver continuously restarting.
+* Docker: Make sure you have Docker installed on your machine. You can download and install Docker from the official website: https://www.docker.com
+    You may need to set the memory for your Docker Engine to a minimum of 5GB otherwise if enough memory is not allocated, it might lead to airflow-webserver continuously restarting.
+* Google Cloud Account
+* Terraform installation
 
 # Installation and Setup
 1. Git clone the repo.
